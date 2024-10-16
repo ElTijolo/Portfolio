@@ -209,12 +209,31 @@ main {
 
 .moreabout {
     display: grid;
-    grid-template-columns: 3;
+    grid-template-columns: 33% 33% 33%;
     grid-template-rows: 1;
+    gap:20px;
+}
+
+.languagee, .framework, .skills {
+    height: 400px;
+    margin-top: 30px;
+    background-color: lightgrey;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.image {
+    background-color: white;
+    width:fit-content;
+    border-radius: 1000px;
+    padding: 5%;
 }
 
 .languagee {
-    grid-column: 1;
+    grid-column: 1;    
 }
 
 .framework {
@@ -223,4 +242,24 @@ main {
 
 .skills {
     grid-column:3;
+}
+
+.languagetitle {
+    font-size: 180%;
+    font-weight: bold;
+}
+
+.name {
+    display: flex;
+    gap:10px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.name > div {
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    color:#36b37e;
 }
