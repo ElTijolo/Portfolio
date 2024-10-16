@@ -26,7 +26,7 @@ body {
 }
 
 main {
-    height: 1000px;
+    height: 50%;
     transform: translateY(-10px);
     background-image: url("desktop/illustration-head-line.png");
     background-repeat: no-repeat;
@@ -79,27 +79,104 @@ main {
 }
 
 .work {
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-top: 100px;
-    display: grid;
-    grid-template-columns: 3;
-    grid-template-rows: 3;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    flex-wrap: wrap;
 }
 
 .work > h1 {
+    color: #172b4d;
+    font-size: 30px;
+}
+
+.allwork {
+    display: grid;
+    grid-template-columns: 3;
+    grid-template-rows: 2;
+    gap:10px;
+}
+
+.onework, .secondwork, .thirdwork, .fourthwork, .fifthwork, .sixthwork {
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 400px;
+    background-color: lightgrey;
+}
+
+.firstwork {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.secondwork {
     grid-column: 2;
     grid-row: 1;
 }
 
-.onework {
+.thirdwork {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.fourthwork {
     grid-column: 1;
     grid-row: 2;
-    display: flex;
-    justify-content: center;
 }
+
+.fifthwork {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.sixthwork {
+    grid-column: 3;
+    grid-row: 2;
+}
+
 .background {
-    background-color: grey;
-    height: 474;
-    width:369;
+    height: 60%;
+}
+
+.other {
+    height: 40%;
+    border-radius: 5px;
+    background-color: white;
+    color:#172b4d;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.other > p {
+    margin-top: 10px;
+}
+
+.language {
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+    gap:5px;
+    justify-content: space-evenly;
+}
+
+.language > div {
+    background-color: lightgray;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.other > input {
+    background-color: #36b37e;
+    padding: 10px;
+    color:white;
+    border-radius: 5px;
+    transform: translateY(10px);
 }
