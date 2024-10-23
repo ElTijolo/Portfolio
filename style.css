@@ -1,0 +1,75 @@
+header {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    height:72px;
+    font-family: 'Inter';
+}
+
+header > div {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 12px;
+    padding-right: 12px;
+    gap: 10px;
+}
+
+a:hover {
+    color:#344563;
+}
+
+a {
+    text-decoration: none;
+}
+
+a {
+    color:#344563;
+}
+
+body {
+    font-family: 'Inter';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("desktop/illustration-head-line.png");
+    background-position: top;
+    background-repeat:no-repeat;
+    background-size: cover;
+    color:#172b4d;
+}
+
+footer, #social {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+footer > a, #social > a {
+    padding: 8px;
+}
+
+#portfolio {
+    display: flex;
+    flex-direction: column;
+    padding-top: 160px;
+    padding-bottom: 160px;
+    gap:24px;
+    width: 50%;
+}
+
+#intro {
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 60px;
+}
+
+#intro > span {
+    color:#36b37e;
+}
+
+#subintro {
+    font-size: 20px;
+    text-align: center;
+    line-height: 32px;
+}
