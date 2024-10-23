@@ -35,16 +35,34 @@ body {
     background-position: top, center;
     background-repeat:no-repeat;
     background-size: 100%;
+    @media (max-width : 1111px) {
+        background-image: url("illustration-head-line.png");
+        background-clip: content-box;
+    }
     color:#172b4d;
 }
 
-footer, #social {
+footer > div {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: #dfe1e6;
+}
+
+footer > div, #social {
     display: flex;
     justify-content: center;
     flex-direction: row;
 }
 
-footer > a, #social > a {
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer > div > a, #social > a {
     padding: 8px;
 }
 
@@ -96,6 +114,9 @@ footer > a, #social > a {
 
 #work {
     padding-top: 600px;
+    @media (max-width:1111px) {
+        padding-top: 80px;
+    }
     padding-bottom: 80px;
     display: flex;
     flex-direction: column;
@@ -113,6 +134,7 @@ footer > a, #social > a {
     display: flex;
     gap:24px;
     flex-direction: column;
+    flex-wrap: wrap;
 }
 
 #row1, #row2 {
@@ -121,6 +143,8 @@ footer > a, #social > a {
     padding-top: 4px;
     padding-bottom: 4px;
     gap:24px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .card {
@@ -199,6 +223,9 @@ footer > a, #social > a {
     align-items: center;
     gap:24px;
     width: 50%;
+    @media (max-width:1111px) {
+        width:80%
+    }
 }
 
 #aboutintro {
@@ -236,11 +263,20 @@ footer > a, #social > a {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    width: 63%;
+    @media (max-width:1111px) {
+        flex-direction: column;
+        width: 90%;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
 }
 
 .aboutcard {
-    width:369px;
+    width:30%;
+    @media (max-width:1111px) {
+        width: 100%; 
+    }
     height: 316px;
     background-color: #ebf0ee;
     border: 1px solid #c1c7d0;
@@ -314,6 +350,10 @@ footer > a, #social > a {
     gap: 24px;
     align-items: center;
     width: 63%;
+    @media (max-width:1111px) {
+        flex-direction: column;
+        width:80%;
+    }
 }
 
 #contacttext {
@@ -322,6 +362,12 @@ footer > a, #social > a {
     line-height: 52px;
     width: 40%;
     text-align: justify;
+    @media (max-width:1111px) {
+        font-size: 40px;
+        width:100%;
+        text-align: center;
+    }
+    
 }
 
 #form {
@@ -329,12 +375,18 @@ footer > a, #social > a {
     flex-direction: column;
     gap:24px;
     width: 60%;
+    @media (max-width:1111px) {
+        width: 80%;
+        align-items: center;
+    }
+    
 }
 
 #name {
     display: flex;
     flex-direction: row;
     gap:24px;
+    width: 100%;
 }
 
 #name > div > input, #email > input {
@@ -366,6 +418,7 @@ footer > a, #social > a {
     align-items: center;
     padding-top: 10px;
     padding-bottom: 10px;
+    width: 100%;
 }
 
 #comment > textarea {
