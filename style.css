@@ -32,9 +32,9 @@ body {
     flex-direction: column;
     align-items: center;
     background-image: url("desktop/illustration-head-line.png");
-    background-position: top;
+    background-position: top, center;
     background-repeat:no-repeat;
-    background-size: cover;
+    background-size: 100%;
     color:#172b4d;
 }
 
@@ -60,7 +60,7 @@ footer > a, #social > a {
 
 #intro {
     font-size: 48px;
-    font-weight: bold;
+    font-weight: 800;
     text-align: center;
     line-height: 60px;
 }
@@ -92,4 +92,94 @@ footer > a, #social > a {
 
 #portfolio > a > input:hover {
     cursor:pointer;
+}
+
+#work {
+    padding-top: 600px;
+    padding-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    gap:48px;
+}
+
+#worktext {
+    font-size: 40px;
+    line-height: 52px;
+    text-align: center;
+    font-weight: 700;
+}
+
+#cards {
+    display: flex;
+    gap:24px;
+    flex-direction: column;
+}
+
+#row1, #row2 {
+    display: flex;
+    flex-direction: row;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    gap:24px;
+}
+
+.card {
+    width: 369px;
+    height: 474px;
+    background-color: #ebf0ee;
+    border: 1px solid #d0d9d4;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.subcard {
+    height: 206px;
+    width: 337px;
+    background-color: white;
+    border-radius: 8px;
+    gap: 16px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subtext {
+    font-weight:600;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+}
+
+.tags {
+    display: flex;
+    flex-direction: row;
+    gap:8px;
+}
+
+.tags > div {
+    padding-left: 12px;
+    padding-right:12px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 4px;
+    background-color: #ebf0ee;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 3%;
+    font-weight: 600;
+}
+
+.seeproject {
+    border: 0px;
+    border-radius: 4px;
+    background-color: #36b37e;
+    padding: 12px;
+    color:white;
+    margin-top: 13px;
+    font-size: 17px;
+    line-height: 24px;
+    letter-spacing: 3%;
+    font-weight: 500;
 }
